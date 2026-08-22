@@ -1,0 +1,10 @@
+diff a/script.js b/script.js	(rejected hunks)
+@@ -1,6 +1,7 @@
+ const roles = [
+   "Full-Stack Development",
+-  "Java Full-Stack Development",
++  "AI & ML Engineering",
++  "Agentic AI Systems",
+ ];
+ 
+ document.documentElement.classList.add("js");
