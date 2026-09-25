@@ -1,5 +1,5 @@
 # Myportfolio
 
-Live Portfolio: https://myportfolio-two-opal-68.vercel.app/
+Live Portfolio: https://kruthik-portfolio-2026.web.app/
 
 This repository contains my personal portfolio website.
