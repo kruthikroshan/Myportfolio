@@ -123,16 +123,16 @@ function appendMessage(text, className) {
 }
 
 function getBotResponse(input) {
-  if (input.includes("contact") || input.includes("email") || input.includes("whatsapp") || input.includes("reach") || input.includes("phone")) {
+  if (/\b(contact|email|whatsapp|reach|phone)\b/.test(input)) {
     return "You can reach Kruthik via Email: godishalakruthikroshan7@gmail.com or WhatsApp: +91 8919611228. Check the Contact section for quick links!";
-  } else if (input.includes("project") || input.includes("work") || input.includes("portfolio")) {
+  } else if (/\b(project|projects|work|portfolio)\b/.test(input)) {
     return "Kruthik has built several amazing projects including MAEPS (AI Multi-Agent System), EduTrack AI, and the SRU Agentic AI RAG System. Scroll to the Featured Projects section to see them!";
-  } else if (input.includes("skill") || input.includes("tech") || input.includes("stack") || input.includes("know")) {
+  } else if (/\b(skill|skills|tech|stack|know)\b/.test(input)) {
     return "Kruthik is a Full Stack & AI/ML Engineer skilled in Java, Python, React.js, Node.js, Spring Boot, and AI pipelines like RAG and LangChain.";
-  } else if (input.includes("hello") || input.includes("hi") || input.includes("hey")) {
+  } else if (/\b(hello|hi|hey)\b/.test(input)) {
     return "Hello! How can I help you learn more about Kruthik today?";
-  } else if (input.includes("who") || input.includes("about") || input.includes("kruthik")) {
-    return "Kruthik Roshan is a Computer Science undergraduate, Full-Stack Developer, and AI/ML Engineer passionate about building intelligent, scalable systems.";
+  } else if (/\b(who|about|kruthik|cgpa)\b/.test(input)) {
+    return "Kruthik Roshan is a Full-Stack Developer and AI/ML Engineer with a 9.0 CGPA. He specializes in Java, Spring Boot, React, and building AI Agentic systems like EduTrack AI and MAEPS. You can check out his projects or download his resume above!";
   } else {
     return "I'm a simple AI assistant! I can tell you about Kruthik's skills, projects, or how to contact him. Could you rephrase your question?";
   }
